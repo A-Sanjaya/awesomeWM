@@ -571,5 +571,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 awful.util.spawn_with_shell("exec polybar ")
 awful.util.spawn_with_shell("dunst")
-awful.util.spawn_with_shell("feh --bg-fill /home/artha/Pictures/Wallpaper/anna_yanami.png")
+awful.util.spawn_with_shell("feh --bg-fill /home/artha/Pictures/Wallpaper/anna_yanami.png") -- wallpaper image url = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXr30h_iHKX72QBX_FIkkl28hIzhhmqQCtUw&s
 awful.util.spawn_with_shell("paplay --volume=50000 ~/.notification_sfx/ara_ara_lisa.mp3 ")
