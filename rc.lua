@@ -507,9 +507,9 @@ client.connect_signal("manage", function (c)
     -- i.e. put it at the end of others instead of setting it master.
     -- if not awesome.startup then awful.client.setslave(c) end
 
-    -- c.shape = function(cr, width, height) -- rounded corner
-    --     gears.shape.rounded_rect(cr, width, height, 30)
-    -- end
+    c.shape = function(cr, width, height)
+        gears.shape.rounded_rect(cr, width, height, 30) -- Change 10 to adjust corner radius
+    end
     
     if awesome.startup
       and not c.size_hints.user_position
@@ -571,5 +571,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 awful.util.spawn_with_shell("exec polybar ")
 awful.util.spawn_with_shell("dunst")
-awful.util.spawn_with_shell("feh --bg-fill ")
-awful.util.spawn_with_shell("paplay --volume=50000 ")
+awful.util.spawn_with_shell("feh --bg-fill /home/artha/Pictures/Wallpaper/anna_yanami.png")
+awful.util.spawn_with_shell("paplay --volume=50000 ~/.notification_sfx/ara_ara_lisa.mp3 ")
